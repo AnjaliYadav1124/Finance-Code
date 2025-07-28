@@ -1,0 +1,81 @@
+/* Wrapper holds sidebar + content side by side */
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Right side: search bar + table */
+.dashboard-content {
+  flex: 1;
+  padding: 24px 32px;
+  overflow-y: auto;
+  background-color: #f4f6fa;
+}
+
+/* Scrollbar styling for main content */
+.dashboard-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dashboard-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.reset-button {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #cbd5e1;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.reset-button {
+  padding: 8px 14px;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #cbd5e1;
+}
+
+/* Responsive tweaks (optional) */
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    padding: 16px;
+  }
+}
