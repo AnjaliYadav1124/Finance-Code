@@ -10,6 +10,7 @@ import io
 
 dashboard_bp = Blueprint('dashboard', __name__)
 
+
 @dashboard_bp.route("/api/holdings")
 @require_auth
 def holdings():

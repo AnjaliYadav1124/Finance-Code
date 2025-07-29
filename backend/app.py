@@ -51,7 +51,11 @@ def subscribe_stream():
 for rule in app.url_map.iter_rules():
     print(rule)
 
+@app.route("/")
+def home():
+    return "✅ API is running. Welcome to the trading backend."
+
 if __name__ == "__main__":
     socketio.init_app(app)
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
 
