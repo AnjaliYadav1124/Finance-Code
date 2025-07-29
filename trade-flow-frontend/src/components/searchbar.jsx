@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import "./searchbar.css";
+import "./SearchBar.css";
 import toast from "react-hot-toast";
 import TradeModal from "./TradeModal";
 import CalculatorModal from "./CalculatorModal";
