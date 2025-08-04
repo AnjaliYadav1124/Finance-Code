@@ -1,0 +1,62 @@
+.trade-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.trade-modal {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+}
+
+.trade-modal h2 {
+  margin-bottom: 10px;
+}
+
+.form-row {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-row input, .form-row select {
+  padding: 6px;
+  width: 180px;
+}
+
+.summary {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons .cancel-btn {
+  background: #ccc;
+}
+
+.buttons button:first-child {
+  background: #3b82f6;
+  color: white;
+}

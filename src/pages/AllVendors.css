@@ -1,0 +1,22 @@
+/* Ensure parent container covers full screen */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* If you have a main container wrapping .dashboard-content */
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* optional, for centering */
+  align-items: flex-start; /* optional */
+}
+
+/* Optional: Stretch dashboard-content inside parent */
+.dashboard-content {
+  width: 100%;
+  max-width: 1200px; /* optional, for max size */
+  margin: 0 auto;     /* center it */
+}

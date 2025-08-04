@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root styling */
+body,
+html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Login Page Layout */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #93c5fd, #3b82f6);
+  animation: fadeIn 1.5s ease-in-out;
+  padding: 20px;
+}
+
+/* Container Box */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 960px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  animation: slideUp 1s ease-in-out;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Left Side - Form/Text */
+.login-left {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.login-left h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.login-left p {
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 30px;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+/* Button Styling */
+.login-button {
+  background-color: #3b82f6;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+  width: fit-content;
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+/* Right Side - Image/Visual */
+.login-right {
+  flex: 1;
+  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.login-right img {
+  background: transparent !important;  /* Removes background if added by styles */
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.login-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

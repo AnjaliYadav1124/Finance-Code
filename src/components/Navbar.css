@@ -1,0 +1,72 @@
+/* Navbar.css */
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  position: absolute;
+  left: 20px;
+}
+
+.navbar-left h1 {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar-center-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-center {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  position: relative;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-center li a:hover {
+  color: #1976d2;
+}
+
+.navbar-center li.active a::after,
+.navbar-center li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #1976d2;
+  transition: width 0.3s ease;
+}
+
+.navbar-center li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #1976d2;
+  transition: width 0.3s ease;
+}
